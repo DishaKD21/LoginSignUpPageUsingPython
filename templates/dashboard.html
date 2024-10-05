@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div id="container-dashboard">
+        <div id="title">
+            <h1>Welcome, {{ user.name }}!</h1>
+        </div>
+
+        <div class="style">
+            <p>You are logged in with the email: <strong>{{ user.email }}</strong></p>
+        </div>
+
+        <div class="input-button">
+            <a id="logout-button" href="/logout">Logout</a>
+        </div>
+    </div>
+
+</body>
+</html>
